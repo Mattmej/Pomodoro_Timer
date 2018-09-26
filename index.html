@@ -8,6 +8,9 @@
     <!-- Link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Link to css file -->
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+
     <title>Pomodoro Timer</title>
 </head>
 
@@ -16,6 +19,68 @@
         <header class = "row jumbotron bg-danger justify-content-center">
             <h1 style="color:white">Pomodoro Timer</h1>
         </header>
+
+
+        <div class = "row space"></div>
+
+        <div class = "row">
+            <div class = "col-3"></div>
+            <div class = "col-6 timer-box text-center">
+                <h3 class = "mt-4 mb-4">00:00</h3>
+            </div>
+            <div class = "col-3"></div>
+        </div>
+
+        <div class = "row space"></div>
+        <div class = "row space"></div>
+
+
+        <div class = "row">
+            <div class = "col-3"></div>
+            <div class = "col-6 d-flex flex-row justify-content-between">
+                <button type = "button" class = "btn btn-success">Pause</button>
+                <button type = "button" class = "btn btn-danger">Restart</button>
+                <button type = "button" class = "btn btn-secondary">Short Break</button>
+                <button type = "button" class = "btn btn-dark">Long Break</button>
+            </div>
+            <div class = "col-3"></div>
+        </div>
+
+        <div class = "row space"></div>
+        <div class = "row space"></div>
+
+        <div class = "row">
+            <div class = "col-12 d-flex flex-row justify-content-center">
+                <button type="button" class="btn btn-primary">
+                    <h5>Change Settings</h5>
+                </button>
+            </div>
+        </div>
+        <div class = "row space"></div>
+        <div class = "row space"></div>
+
+
+        <hr/>
+        <div class = "row space"></div>
+
+
+        <div class = "row">
+            <div class = "col-12 text-center" id = "settings">
+                <h3>Settings</h3>
+                <!-- <ul>
+                    <li id="timer-value"></li>
+                    <li id="short-break-value"></li>
+                    <li id="short-breaks"></li>
+                    <li id="long-break-value"></li>
+                    <li id="end-break-value"></li>
+                </ul> -->
+            </div>
+        </div>
     </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "assets/js/app.js"></script>
+
+
 </body>
 </html>
