@@ -13,23 +13,9 @@ Timer section
     * Number of "counted breaks" will be displayed above the timer.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
+
+// redirect to settings page when "change settings" button is pressed
+$("#change-settings").on("click", function() {
+    window.location.href = "settings.html";
+})
