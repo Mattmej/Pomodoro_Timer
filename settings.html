@@ -32,18 +32,24 @@
 
         <form>
             <div class="form-group">
-                <label for="counted-break">Counted Break (in minutes)</label>
-                <input type="text" class="form-control" id="counted-break-validation" placeholder="countedBreak" required>
+                <label for="first-break">First Break (in minutes)</label>
+                <input type="text" class="form-control" id="number-validation" placeholder="firstBreak" required>
                 <div class="invalid-feedback">Please enter a number.</div>
             </div>
 
             <div class="form-group">
-                <label for="counted-number">Number of Counted Breaks</label>
-                <input type="text" class="form-control" id="counted-number-validation" placeholder="countedNumber" required>
+                <label for="first-number">Number of First Breaks</label>
+                <input type="text" class="form-control" id="number-validation" placeholder="firstNumber" required>
                 <div class="invalid-feedback">Please enter a number.</div>
             </div>
 
-            
+            <div class="form-group">
+                <label for="second-break">Second Break (in minutes)</label>
+                <input type="text" class="form-control" id="number-validation" placeholder="secondBreak" required>
+                <div class="invalid-feedback">Please enter a number.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </body>
