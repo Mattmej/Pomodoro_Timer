@@ -20,6 +20,11 @@ $("#change-settings").on("click", function() {
     window.location.href = "settings.html";
 });
 
-$("#submitForm").on("click", function() {
+$("#submitForm").on("click", function(event) {
+    event.preventDefault();
     window.location.href = "index.html";
 })
+
+// $("#breakForm").on("submit", function() {
+//     window.location.href = "index.html";
+// })
