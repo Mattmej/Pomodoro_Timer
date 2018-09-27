@@ -18,4 +18,8 @@ Timer section
 // redirect to settings page when "change settings" button is pressed
 $("#change-settings").on("click", function() {
     window.location.href = "settings.html";
+});
+
+$("#submitForm").on("click", function() {
+    window.location.href = "index.html";
 })
