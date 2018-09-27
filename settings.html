@@ -30,22 +30,22 @@
             <p>After this count is reached, the second break will begin.</p>
         </div>
 
-        <form id="breakForm">
+        <form id="needsValidation">
             <div class="form-group">
-                <label for="first-break">First Break (in minutes)</label>
-                <input type="text" class="form-control" id="number-validation" placeholder="Enter a number" required>
+                <label for="firstBreak">First Break (in minutes)</label>
+                <input type="text" class="form-control" id="firstBreak" placeholder="Enter a number" required>
                 <div class="invalid-feedback">Please enter a number.</div>
             </div>
 
             <div class="form-group">
-                <label for="first-number">Number of First Breaks</label>
-                <input type="text" class="form-control" id="number-validation" placeholder="Enter a number" required>
+                <label for="numBreaks">Number of First Breaks</label>
+                <input type="text" class="form-control" id="numBreaks" placeholder="Enter a number" required>
                 <div class="invalid-feedback">Please enter a number.</div>
             </div>
 
             <div class="form-group">
-                <label for="second-break">Second Break (in minutes)</label>
-                <input type="text" class="form-control" id="number-validation" placeholder="Enter a number" required>
+                <label for="secondBreak">Second Break (in minutes)</label>
+                <input type="text" class="form-control" id="secondBreak" placeholder="Enter a number" required>
                 <div class="invalid-feedback">Please enter a number.</div>
             </div>
 
@@ -56,5 +56,8 @@
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type = "text/javascript" src = "assets/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 </body>
 </html>

@@ -15,15 +15,45 @@ Timer section
 
 */
 
+function useSettings(firstBreak, numBreaks, secondBreak) {
+
+}
+
 // redirect to settings page when "change settings" button is pressed
 $("#change-settings").on("click", function() {
     window.location.href = "settings.html";
 });
 
 $("#submitForm").on("click", function(event) {
-    event.preventDefault();
+    // event.preventDefault();
+    var firstBreak = $("#firstBreak").val().trim();
+    var secondBreak = $("#secondBreak").val().trim();
+    var numBreaks = $("#numBreaks").val().trim();
+
+    // useSettings(firstBreak, numBreaks, secondBreak);
+
     window.location.href = "index.html";
+
 })
+
+// $("#needsValidation").validate({
+//     rules: {
+//         firstBreak: {
+//             required: true,
+//             digits: true
+//         },
+
+//         numBreaks: {
+//             required: true,
+//             digits: true
+//         },
+
+//         secondBreak: {
+//             required: true,
+//             digits: true
+//         }
+//     }
+// });
 
 // $("#breakForm").on("submit", function() {
 //     window.location.href = "index.html";
