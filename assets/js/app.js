@@ -45,9 +45,9 @@ $("#change-settings").on("click", function() {
 // $(".timerSettings").validate();
 
 $( "#timerSettings" ).validate({
-    submitHandler: function(form) {
-        form.submit();
-    },
+    // submitHandler: function(form) {
+    //     form.submit();
+    // },
     rules: {
       field: {
         required: true,
