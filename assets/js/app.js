@@ -20,27 +20,6 @@ $("#change-settings").on("click", function() {
     window.location.href = "settings.html";
 });
 
-// $("#submitForm").on("click", function() {
-//     window.location.href = "index.html";
-// })
-
-// function validateForm() {
-//     var x = document.forms["timerSettings"][]
-// }
-
-// // just for the demos, avoids form submit
-// jQuery.validator.setDefaults({
-//     debug: true,
-//     success: "valid"
-//   });
-//   $( ".timerSettings" ).validate({
-//     rules: {
-//       field: {
-//         required: true,
-//         digits: true
-//       }
-//     }
-//   });
 
 // $(".timerSettings").validate();
 
