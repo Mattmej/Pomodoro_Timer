@@ -21,9 +21,22 @@ $("#change-settings").on("click", function() {
 });
 
 $("#play-pause-button").on("click", function() {
-  $("#time").html("25:00");
-  $(this).html("Start");
+  setPomodoro();
 })
+
+function setPomodoro() {
+
+  var date = new Date(null);
+  date.setSeconds(10);
+  var timeString = date.toISOString();
+  var timeStringShort = date.toISOString().substr(14, 5);
+  console.log(timeString);
+  console.log(timeStringShort);
+
+
+  $("#time").html(timeStringShort);
+  $("#play-pause-button").html("Start");
+}
 
 
 // $(".timerSettings").validate();
