@@ -20,17 +20,22 @@ $("#change-settings").on("click", function() {
     window.location.href = "settings.html";
 });
 
+$("#play-pause-button").on("click", function() {
+  $("#time").html("25:00");
+  $(this).html("Start");
+})
+
 
 // $(".timerSettings").validate();
 
-$( "#timerSettings" ).validate({
-    // submitHandler: function(form) {
-    //     form.submit();
-    // },
-    rules: {
-      field: {
-        required: true,
-        digits: true
-      }
-    }
-  });
+// $( "#timerSettings" ).validate({
+//     // submitHandler: function(form) {
+//     //     form.submit();
+//     // },
+//     rules: {
+//       field: {
+//         required: true,
+//         digits: true
+//       }
+//     }
+//   });
