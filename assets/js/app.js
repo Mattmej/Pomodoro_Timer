@@ -20,11 +20,21 @@ $("#change-settings").on("click", function() {
     window.location.href = "settings.html";
 });
 
-$("#set-timer-button").on("click", function() {
-  setPomodoro();
-  // $(this).removeAttr("id");
-  // $(this).attr('id', 'play-pause-button');
-});
+// $(".set-timer-button").on("click", function() {
+//   setPomodoro();
+//   // $(this).removeAttr("id");
+//   // $(this).attr('id', 'play-pause-button');
+//   // createPlayButton();
+// });
+
+$(".set-timer-button").on("click", setPomodoro); 
+
+$(".start-button").on("click", function() {
+  alert("Class is now start button!");
+})
+
+
+// $(".set-timer-button").on("click", setPomodoro())
 
 // $("#play-pause-button").on('click', function() {
 //   alert("Started!");
@@ -48,16 +58,25 @@ function setPomodoro() {
 
 
   $("#time").html(timeStringShort);
-  $("#set-timer-button").html("Start");
-  createPlayButton();
+  // $("#set-timer-button").html("Start");
+  // createPlayButton();
   // $("#set-timer-button").remove("#set-timer-button");
+  $('.set-timer-button').html('Start');
+  $('.set-timer-button').off('click').on('click', createPlayButton);
 
 };
 
 function createPlayButton() {
-  $('#set-timer-button').remove();
-  $('#button-holder').prepend('<button type="button" class="btn btn-success" id="play-pause-button">Start</button>');
+  // $('#set-timer-button').remove();
+  // $('.set-timer')
+  // $('#button-holder').prepend('<button type="button" class="btn btn-success" id="play-pause-button">Start</button>');
   // $('#button-holder').addClass("btn btn-success");
+  // $('#set-button').toggleClass('set-timer-button');
+  $('#set-button').removeClass('set-timer-button');
+  // $('#set-button').toggleClass('start-button');
+  $('#set-button').addClass('start-button');
+  // $('#set-button').html('Start');
+  alert("Start button pressed!");
 }
 
 
