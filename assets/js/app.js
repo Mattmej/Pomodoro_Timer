@@ -20,7 +20,7 @@ $("#change-settings").on("click", function() {
 });
 
 
-$(".set-timer-button").on("click", setPomodoro); 
+$("#set-button").on("click", setPomodoro); 
 
 
 $('#button-holder').on('click', '#play-pause-button', function() {
@@ -40,14 +40,14 @@ function setPomodoro() {
 
 
   $("#time").html(timeStringShort);
-  $('.set-timer-button').html('Start');
-  $('.set-timer-button').off('click').on('click', createPlayButton);
+  $('#set-button').html('Start');
+  $('#set-button').off('click').on('click', createPlayButton);
 
 };
 
 function createPlayButton() {
-  $('#set-button').removeClass('set-timer-button');
-  $('#set-button').addClass('start-button');
+  // $('#set-button').removeClass('set-timer-button');
+  // $('#set-button').addClass('start-button');
   alert("Start button pressed!");
 }
 
